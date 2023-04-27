@@ -53,7 +53,7 @@ while not endgame: #endgame false olduğu sürece döngü çalışır
 
     if endgame == False:
         first_hand()
-        print(f"Your cards is {player_card} and your score is {playerscore}\nDealer's first hand is {dealer_card[0]}")
+        print(f"Your cards are {player_card} and your score is {playerscore}\nDealer's first hand is {dealer_card[0]}")
         if playerscore == 21:
             playagain = input(f"You have blackjack! Do you want to play again? y/n ")
             endgame = yes_or_no(playagain)
@@ -64,7 +64,7 @@ while not endgame: #endgame false olduğu sürece döngü çalışır
                 if hit_or_stand == "h":
                     hit_for_player()
                     playerscore = sum(player_card)
-                    print(f"Your cards is {player_card} and your score is {playerscore}\nDealer's first hand is {dealer_card[0]}")
+                    print(f"Your cards are {player_card} and your score is {playerscore}\nDealer's first hand is {dealer_card[0]}")
                     if playerscore > 21:
                         playagain = input("You lose! Do you want to play again? y/n ")
                         endgame = yes_or_no(playagain)
